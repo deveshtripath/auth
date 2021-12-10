@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// import { Typography, Button, Input, Box, FormControl, InputLabel, FormHelperText, ImageList, Container, Grid, ImageListItem, Checkbox, FormControlLabel, TextField, Link, TextareaAutosize } from "@material-ui/core";
+import SignIn from "./SignIn";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Routes
+} from "react-router-dom";
+import Login from "./Login";
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <SignIn/>
+    <Router>
+      <div>
+        <Routes>
+          <Route exact path="/signin" element={<SignIn/>}/>
+          <Route exact path="/" element={<Login/>}/>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
