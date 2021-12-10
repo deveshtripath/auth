@@ -1,12 +1,7 @@
 // import { Typography, Button, Input, Box, FormControl, InputLabel, FormHelperText, ImageList, Container, Grid, ImageListItem, Checkbox, FormControlLabel, TextField, Link, TextareaAutosize } from "@material-ui/core";
 import SignIn from "./SignIn";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Routes
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Switch, Route, Routes } from "react-router-dom";
 import Login from "./Login";
 
 function App() {

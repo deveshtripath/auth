@@ -1,6 +1,13 @@
 import React from 'react'
 import { Typography, Button, Input, Box, FormControl, InputLabel, FormHelperText, ImageList, Container, Grid, ImageListItem, Checkbox, FormControlLabel, TextField, Link, TextareaAutosize } from "@material-ui/core";
 
+// const mystyle = {
+//   @media only screen and (max-width: 600px) {
+//     body {
+//       background-color: lightblue;
+//     }
+//   }
+// }
 
 import { useState } from "react";
 import {
@@ -10,6 +17,8 @@ import {
   signOut,
 } from "firebase/auth";
 import { auth } from "./firebase";
+
+
 
 
 function Login() {
@@ -131,7 +140,7 @@ function Login() {
       <h4> User Logged In: </h4>
       {user?.email ? <h1>You have login</h1> : <h1>You have not login</h1>}
 
-      <Button onClick={logout}> Sign Out </Button>
+      <Button variant="outlined" onClick={logout}> Sign Out </Button>
         </Grid>
       </Grid>
 
