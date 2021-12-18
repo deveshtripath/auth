@@ -1,13 +1,6 @@
 import React from 'react'
 import { Typography, Button, Input, Box, FormControl, InputLabel, FormHelperText, ImageList, Container, Grid, ImageListItem, Checkbox, FormControlLabel, TextField, Link, TextareaAutosize } from "@material-ui/core";
 
-// const mystyle = {
-//   @media only screen and (max-width: 600px) {
-//     body {
-//       background-color: lightblue;
-//     }
-//   }
-// }
 
 import { useState } from "react";
 import {
